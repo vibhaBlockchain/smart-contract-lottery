@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: MIT
+//Debug the solidity compiler and import version for chainlink interface
 pragma solidity =0.8.8;
 //Compiler using remote version: 'v0.8.8+commit.dddeac2f', solidity version: 0.8.8+commit.dddeac2f.Emscripten.clang
 
