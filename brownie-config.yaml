@@ -1,0 +1,23 @@
+dependencies:
+  - smartcontractkit/chainlink-brownie-contracts@0.3.1
+complier:
+  solc:
+    remappings:
+      - '@chainlink=smartcontractkit/chainlink-brownie-contracts@0.3.1'
+dotenv: .env
+networks:
+  default: development
+  development: 
+    keyhash: '0x'
+    fee: 1
+  rinkeby:
+    eth-usd-price-feed: '0x'
+    vrf-coordinator: '0x'
+    link-token: '0x'
+    keyhash: '0x'
+    fee: 1
+    verify: True
+  mainnet-fork:
+    eth-usd-price-feed: '0x'
+wallets:
+  from-key: ${PRIVATE_KEY}
